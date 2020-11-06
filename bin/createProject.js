@@ -7,8 +7,11 @@ const main = () => {
     .post(
       CREATE_PROJECT_URL,
       {
-        firstName: 'Fred',
-        lastName: 'Flintstone',
+        name: 'hello-api-generated-vercel-project',
+        gitRepository: {
+          type: 'github',
+          repo: 'okeeffed/hello-vercel-api',
+        },
       },
       {
         headers: {
